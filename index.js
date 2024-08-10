@@ -15,7 +15,7 @@ function generatePassword() {
     let allowLower = document.getElementById('lowercase').checked;
     let allowSymbols = document.getElementById('symbols').checked;
     let allowNumbers = document.getElementById('numbers').checked;
-    let passwordLenght = document.getElementById('lenght').value;
+    let passwordLength = document.getElementById('length').value;
 
     var x = document.getElementById("passSection");
     if (x.style.display === "none") {
@@ -30,7 +30,7 @@ function generatePassword() {
     allCharacters += allowSymbols == true  ? symbolCharacters : "" ;
     allCharacters += allowNumbers == true ? numberCharacters : "" ;
 
-    for (let i = 0 ; i < passwordLenght ; i ++) {
+    for (let i = 0 ; i < passwordLength ; i ++) {
         const randomCharacter = Math.floor(Math.random() * allCharacters.length);
         password += allCharacters[randomCharacter];
     }
