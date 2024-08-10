@@ -44,7 +44,7 @@ body {
     margin-inline:auto;
     border: none;
     padding: 2em;
-    width: clamp(380px , 40% , 1000px);
+    width: clamp(400px , 40% , 1000px);
     border-radius: 15px;
     height: fit-content;
     text-align: center;
